@@ -119,6 +119,11 @@ main {
     color: #ffffff;
 }
 
+#reasons {
+    margin: 20px; auto; 20px; auto;
+    top: 90%;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
