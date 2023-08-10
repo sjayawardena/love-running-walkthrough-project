@@ -26,6 +26,7 @@ h3 {
     letter-spacing: 2px;
     color: #252525;
 }
+
 .hidden-heading {
     display: none;
 }
@@ -175,6 +176,7 @@ benefits hr {
     display: flex;
     flex-wrap: wrap;
 }
+
 #times div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
@@ -192,6 +194,7 @@ benefits hr {
     /*Override the heading colour set in general styles*/
     color: #fafafa;
 }
+
 /* Gallery page */
 #photos img {
     width: 100%;
@@ -216,6 +219,14 @@ benefits hr {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/*Media query: large or landscape phones (576px and up) 8 */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0
+    }
 }
 
 /* Media query: tablets and larger (780px and up) */
@@ -278,6 +289,11 @@ benefits hr {
         text-align: end;
         align-self: flex-end;
     }
+
+    /* Gallery */
+    #photos {
+        column-count: 3
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -286,30 +302,35 @@ benefits hr {
         border-bottom: 1px solid #3a3a3a;
     }
 
+    /* Gallery */
+    #photos {
+        column-count: 4
+    }
+
     /* Larger devices (bigger screens 1200px and up) */
-   /* Reasons section */
-   #benefits {
-    display: flex;
-    flex-direction: row;
-   }
+    /* Reasons section */
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
 
-   #benefits > div {
-    flex: 1;
-   }
-    
-   #benefits-image {
-    order: 0;
-   }
+    #benefits>div {
+        flex: 1;
+    }
 
-   #benefits-mental {
-    order: 1;
-   }
+    #benefits-image {
+        order: 0;
+    }
 
-   benefits-mental > div {
-    align-self: flex-start;
-   }
+    #benefits-mental {
+        order: 1;
+    }
 
-   benefits-physical > div {
-    align-self: flex-end;
-   }
+    benefits-mental>div {
+        align-self: flex-start;
+    }
+
+    benefits-physical>div {
+        align-self: flex-end;
+    }
 }
