@@ -249,7 +249,8 @@ benefits hr {
 }
 
 .radio-buttons {
-    width: 100% display: flex;
+    width: 100% 
+    display: flex;
     justify-content: space-between;
 }
 
