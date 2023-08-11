@@ -253,7 +253,7 @@ benefits hr {
     justify-content: space-between;
 }
 
-.join-button {
+#join-button {
     margin-top: 20px;
     border-radius: 2px;
     padding: 15px 32px;
